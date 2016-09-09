@@ -1,6 +1,6 @@
 # XProcess
 
-An external process shell which uses events to communicate with its invoker.
+An external process wrapper which uses events to communicate with its invoker.
 
 ## Sample usage
 
