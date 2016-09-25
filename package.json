@@ -1,6 +1,6 @@
 {
   "name": "xprocess",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "XProcess - an external process shell",
   "author": "Carlos Justiniano",
   "analyze": false,
