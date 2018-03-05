@@ -12,12 +12,12 @@ xProcess.run('node', './child.js');
 xProcess.send({
   text: 'Hey child, wake up it\'s time for school!'
 });
+
 xProcess.on('message', (msg) => {
   console.log(`Child: ${msg.text}`);
 });
 xProcess.on('disconnect', () => console.log('Child disconnected'));
 xProcess.on('exit', () => console.log('Child exit'));
-xProcess.on('close', () => {
 xProcess.on('close', () => {
   console.log('Parent: Okay, child is in class - I\'m off to work where I\'ll deal with bigger kids.');
 });
@@ -27,7 +27,7 @@ xProcess.on('close', () => {
 
 Run parent.js in test folder:
 
-```shell
+```
 $ node parent.js
 Parent: Hey child, wake up it's time for school!
 Child: Hey mom, five more minutes?
