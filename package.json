@@ -1,18 +1,32 @@
 {
   "name": "xprocess",
-  "version": "1.0.1",
-  "description": "XProcess - an external process shell",
+  "version": "2.0.0",
+  "description": "XProcess - create and manage external processes",
   "author": "Carlos Justiniano",
+  "license": "MIT",
   "analyze": false,
   "engines": {
     "node": ">=6.2.1"
   },
   "main": "index.js",
+  "keywords": [
+    "spawn",
+    "child",
+    "process"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjus/xprocess.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cjus/xprocess/issues"
+  },
+  "homepage": "https://github.com/cjus/xprocess#readme",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^2.12.0",
-    "jscs": "^3.0.4",
-    "jscs-jsdoc": "^2.0.0"
+    "eslint": "3.19.0",
+    "eslint-config-google": "0.7.1",
+    "eslint-plugin-mocha": "4.9.0"
   },
   "bin": {
     "xprocess": "index.js"
